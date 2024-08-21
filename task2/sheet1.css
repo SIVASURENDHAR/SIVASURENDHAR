@@ -1,0 +1,231 @@
+/* 
+note :
+display:none is used the remove an element from the structure.
+visibilty : hidden; it will just hide the element and structure remains the same.
+
+*/
+
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.foldit-<uniquifier> {
+font-family: "Foldit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+
+.container p {
+    font-size: 100px;
+    color: green;
+    font-family: "Foldit", sans-serif;
+    font-weight: 900;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-btn a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-btn a:hover {
+    background-color: rgba(138, 43, 226, 0.5);
+    text-decoration: underline;
+
+}
+
+.btn-active a {
+    background-color: blueviolet;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 50px;
+    margin: 20px 0px;
+
+}
+
+.card p {
+    width: 250px;
+    color: black;
+    text-align: justify;
+}
+
+.card img {
+    width: 250px;
+    height: 250px;
+    color: black;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 50px 0px;
+
+}
+
+
+.contactform {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+    font-family: "Inter", sans-serif;
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid rgb(222, 222, 222);
+    border-radius: 8px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 0px 20px 0px;
+}
+
+.contact-head {
+    font-size: 30px;
+    font-weight: 600px;
+    padding: 0px 0px 20px 0px;
+
+}
+
+.contact-label {
+    font-size: 18px;
+    padding: 10px 0px;
+    font-weight: 500;
+
+}
+
+.inputfield {
+    font-size: 20px;
+    padding: 14px 20px;
+    border: 2px solid rgb(172, 172, 172);
+    border-radius: 8px;
+    width: 370px;
+}
+
+.contact-btn {
+    padding: 15px 25px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: blueviolet;
+    width: 370px;
+    text-align: center;
+    border-radius: 8px;
+
+}
+
+.signup {
+    width: 370px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(192, 192, 192);
+}
+
+.signup a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+
+@media (max-width:740px) {
+    .container {
+        background-color: red;
+    }
+
+    .container p {
+        font-size: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        display: none;
+    }
+
+    .cards {
+        flex-direction: column;
+        row-gap: 50px;
+        column-gap: 0px;
+        width: 100%;
+        margin: 20px;
+    }
+
+    .footer p {
+        font-size: 30px;
+    }
+}
